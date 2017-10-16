@@ -206,12 +206,7 @@
                 <a href="#" onclick="setUserId({{ logement.host.id }})"><img style="width: 70px;width: 70px" src="{{ asset('images/iconchat.png') }}"></a>
 
             </div>
-            {# Note : Requires Active Connection #}
-            <div class=" box_style_2">
-                {{ getFacebookLikeButton() }} <hr />
-                {{ getTwitterButton() }} <hr />
-                {{ getGoogleplusButton() }}
-            </div>
+
         </div>
         {% if user is not null %}
         {% include 'chatDiv.html.twig' %}
